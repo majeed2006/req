@@ -1,0 +1,7 @@
+# ViM Swap Files
+*.swp
+
+# LaTeX Build Files
+*.aux
+*.log
+*.toc
