@@ -25,13 +25,19 @@ that lists your proposed requirements:
 Building
 --------
 
-Prerequisites:
+To build this package, you will need a TeX environment installed and set
+up on your computer. A common one is
+[TeXLive](https://www.tug.org/texlive/acquire.html), but so long as it
+provides the `pdflatex` command it should be fine.
 
-* `pdflatex` LaTeX compiler.
+Your TeX environment will also need to have the `geometry` and `titling`
+packages available. If you are using TeXLive, these can be installed by
+running the following commands as root.
 
-* `geometry` LaTeX package.
-
-* `titling` LaTeX package.
+```
+# tlmgr install geometry
+# tlmgr install titling
+```
 
 To build the PDF, simply run the `make` command. The project Makefile will
 handle all the actual details of the process.
